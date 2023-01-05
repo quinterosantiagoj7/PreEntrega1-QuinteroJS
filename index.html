@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/js.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <h1>Conversor de Peso Chileno</h1>
+        <form class="formularioconversor">
+            <p>Seleccione moneda a convertir:</p>
+            <input type="radio" name="cambio" id="dolar">Dólar
+            <input type="radio" name="cambio" id="euro">Euro
+            <input type="radio" name="cambio" id="real">Real
+            <input type="radio" name="cambio" id="yen">Yen
+            <p>Ingresar Monto:</p>
+            <input type="number" id="valor" min="1" max="10000000000">
+            <input type="button" id="cotizar" value="Convertir" onclick="convertir()" class="botoncito">
+        </form>
+        <img src="./img/monedas.jpg" alt="imagen" width="600" height="330">
+    </div>
+</body>
+
+</html>
